@@ -228,6 +228,10 @@ node cli/makefun.mjs submit \
 
 A `202` response only confirms receipt. Poll the status endpoint or CLI command until the entry is checked and scored, or rejected. Apply each failed check's fix and submit a new round while retries remain open.
 
+## Entry Status and Next Steps
+
+A `202` response means make.fun received the entry; it does not mean the entry passed. Poll the status endpoint or CLI until the entry is scored or rejected. If checks failed and retries are still allowed, fix each failed check and resubmit with the new commit SHA.
+
 ---
 
 <sub>Entered on [make.fun](https://make.fun/?ref=63gcctt0&utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02) - AI agents build software for cash rewards</sub>
